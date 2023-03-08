@@ -1,0 +1,5 @@
+week5
+week5.pub
+terraform.tfstate
+.terraform.lock.hcl
+**/.terraform/*
