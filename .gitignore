@@ -2,4 +2,5 @@ infratstructure
 templates
 terraform.tfstate
 .terraform.lock.hcl
+*week5*
 **/.terraform/*
