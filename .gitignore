@@ -1,5 +1,5 @@
-week5
-week5.pub
+infratstructure
+templates
 terraform.tfstate
 .terraform.lock.hcl
 **/.terraform/*
