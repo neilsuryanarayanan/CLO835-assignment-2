@@ -4,7 +4,6 @@ metadata:
   name: database-replicaset
   labels:
     app: mysql
-    
 spec:
   replicas: 3
   selector:
@@ -14,14 +13,13 @@ spec:
     metadata:
       labels:
         app: mysql
-        
     spec:
-      containers:
-      - name: database-container
-        image: 061188934096.dkr.ecr.us-east-1.amazonaws.com/database-repository:v0.1
-        ports:
-        - containerPort: 3306
-        
-        env:
-        - name: MYSQL_ROOT_PASSWORD
-          value: pass1234
+      containers:
+        - name: database-container
+          image: 061188934096.dkr.ecr.us-east-1.amazonaws.com/database-repository:v0.1
+          ports:
+            - containerPort: 3306
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              value: pass1234
+          
